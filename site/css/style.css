@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: #333;
+}
+
+form {
+    margin-top: 30px;
+    text-align: center;
+}
+
+input[type=text],
+input[type="number"] {
+    padding: 10px;
+    border: 2px solid #b99c9cb0;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    width: 300px;
+}
+
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    border-color: blue;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#colorful {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    font-size: 18px;
+    margin: 10px;
+}
+
+input[type=submit]:active~#after-submit {
+    display: block;
+}

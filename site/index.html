@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Приветствие</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-RU-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+
+    <form id="input-data">
+        <h1>Введите данные:</h1>
+        <br>
+        <input type="text" id="nameInput" placeholder="Введите ваше имя">
+        <br>
+        <input type="number" id="ageInput" placeholder="Укажите возраст">
+        <br><br>
+        <input type="submit" value="Отправить" onclick="printName()">
+    </form>
+
+    <div id="after-submit" style="display: none;">
+        <button onclick="changeColor()">Узнать цвет</button>
+        <p id="colorful"></p>
+
+        <button onclick="changeListColor()">Проверка данных</button>
+        <ul id="user-data">
+
+        </ul>
+    </div>
+</body>
+
+</html>
