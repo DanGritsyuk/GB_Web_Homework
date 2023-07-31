@@ -83,3 +83,7 @@ li {
 input[type=submit]:active~#after-submit {
     display: block;
 }
+
+input.error {
+    border: 2px solid red;
+}
