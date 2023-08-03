@@ -21,17 +21,6 @@ function changeListColor() {
     }
 }
 
-function writeCookie(name, val) {
-    var date = new Date;
-    document.cookie = name + "=" + val + "; path=/;";
-}
-
-function readCookie(name) {
-    var matches = document.cookie.match(new RegExp(
-        "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
-    return matches ? decodeURIComponent(matches[1]) : undefined;
-}
-
 function handleSubmit(event) {
     event.preventDefault();
     let requiredInputs = document.querySelectorAll('[required]');
